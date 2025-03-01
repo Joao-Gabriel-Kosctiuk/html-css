@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    background-color: #716873;
+    font-size: 1.1em;
+}
+header{
+    background-color: #4F4070;
+    height: 150px;
+}
+header > h1{
+    text-align: center;
+    color: #F0C611;
+    margin:0px 0px 90px 0px ;
+}
+.linknav{
+    color: #F0C611;
+    text-decoration: none;
+    padding: 5px;
+}
+.linknav:visited{
+    color: #b39514;
+}
+.linknav:hover{
+    text-decoration: underline;
+}
+main{
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    background-color: #C4F011;
+    padding: 10px;
+}
+.titulos{
+    color: #4F4070;
+}
+footer{
+    background-color: #4F4070;
+    color: #F0C611;
+    padding: 20px  0px;
+    text-align: center;
+    font-size: 1.5em;
+}

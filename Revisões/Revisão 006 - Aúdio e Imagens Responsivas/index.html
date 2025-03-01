@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão 6</title>
+</head>
+<body>
+    <h1>Revisão 6</h1>
+    <h2>Imagens Responsivas</h2>
+    <p>Podemos 'setar' que uma imagem mude o tamanho e peso dependendo do tamanho da tela, assim economizando dados.</p>
+    <picture>
+        <source media="(max-width: 850px)" srcset="Imagens/bigbenp.JPG" type="image/jpeg">
+        <source media="(max-width: 1150px)" srcset="Imagens/bigbenm.JPG" type="image/jpeg">
+        <img src="Imagens/BigBen.JPG" alt="BigBen">
+    </picture>
+    <h2>Aúdios</h2>
+    <audio src="Audio/wait-wait-wait-what-the-hell-legend-sound.mp3" controls>
+        <source src="Audio/wait-wait-wait-what-the-hell-legend-sound.mp3" type="audio/mpeg">
+        <source src="Audio/wait-wait-wait-what-the-hell-legend-sound.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta aúdio. <a href="Audio/wait-wait-wait-what-the-hell-legend-sound.mp3" download="wait-wait-wait-what-the-hell-legend-sound.mp3" type="audio/mpeg">Baixe o mp3 clicando aqui</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Experimente ampliar o tamanho da janela de seu navegador.</p>
+    
+    <picture>
+        <source media="(min-width: 1201px)" srcset="Imagens/paisagem-g.png" type="image/png">
+        <source media="(min-width: 741px)" srcset="Imagens/paisagem-m.png" type="image/png">
+        <img src="Imagens/paisagem-p.png" alt="Mulher na paisagem">
+    </picture>
+    <picture>
+        <picture>
+            <source media="(min-width: 790px)" srcset="Imagens/paisagem-g.png" type="image/png">
+            <source media="(max-width: 1250px)" srcset="Imagens/paisagem-m.png" type="image/png">
+            <img src="Imagens/paisagem-g.png" alt="Mulher na paisagem">
+        </picture>
+    </picture>
+</body>
+</html>

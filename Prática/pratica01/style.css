@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Game';
+    src: url('fontes/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    margin: 0px;
+    background-color: #2B6BFF;
+    text-align: justify;
+}
+header{
+    background-color: #405480;
+    color: #FF9200;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+header > h1{
+    margin: 0px;
+    font-family: 'Game', 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+nav{
+    background-color: #0B57FF;
+    height: 40px;
+}
+.links{
+    background-color: #FF9200;
+    color: #405480;
+    text-decoration: none;
+    width: 140px;
+    padding: 5px;
+}
+.links:hover{
+    background-color: rgb(233, 233, 233);
+    color: #FF9200;
+}
+main{
+    margin: auto;
+    width: 700px;
+    height: 890px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+main > h2{
+    margin: 0px;
+}
+aside{
+    text-align: center;
+    background-color: #405480;
+    border-radius: 10px;
+    padding-bottom: 18.72px;
+}
+#jogo_do_dia{
+    background-color: #FF9200;
+    border-radius: 10px 10px 0px 0px;
+}
+#hollow{
+    display: block;
+    margin: 0px auto;
+}
+footer{
+    background-color: #405480;
+    font-size: 1.5em;
+    text-align: center;
+    color: #FF9200;
+    font-weight: bold;
+    padding: 20px;
+}

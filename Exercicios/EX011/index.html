@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens  Dinâmica</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir esse site em diferentes tamanhos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/tamanhop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/tamanhom.png" type="image/png">
+        <img src="Imagens/tamanhog.png" alt="Imagem flexivel">
+    </picture>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="Imagens/tamanhog.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="Imagens/tamanhom.png" type="image/png">
+        <img src="Imagens/tamanhop.png" alt="Imagem de fallback">
+    </picture>
+    <h2>Reproduzindo aúdio</h2>
+    <audio preload="metadata"controls loop autoplay>
+        <source src="audio/paro.mp3" type="audio/mpeg">
+        <source src="audio/paro.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="audio/paro.mp3">Clique aqui</a> para baixar o arquivo mp3.</p>
+    </audio>
+</body>
+</html>
