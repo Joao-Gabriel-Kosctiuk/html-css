@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+    <style>
+        #container{
+            position: relative;
+
+            background-image: url('imagens/target001.png');
+            background-color: blue;
+            background-size: 100% 100%;
+
+            height: 90vh;
+        }
+        #content{
+            position: absolute;
+
+            background-image: url('imagens/target001.png');
+            background-color: grey;
+            background-size: 100% 100%;
+
+            height: 200px;
+            width: 200px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Centralização Vertical</h1>
+    <div id="container">
+        <div id="content">
+            
+        </div>
+    </div>
+</body>
+</html>
