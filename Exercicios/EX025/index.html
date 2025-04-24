@@ -12,12 +12,15 @@
 </head>
 <body>
     <h1>Formulário em HTML</h1>
-    <form action="cadastro.php" autocomplete="off">
-        <p>Nome: 
-            <input type="text" name="nome" id="nome">
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
         </p>
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="sobrenome">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><label for="Idade">Idade:</label>
+            <input type="text" name="idade" id="Idade">
         </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
