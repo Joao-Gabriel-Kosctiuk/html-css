@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form test</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iname">Name: </label>
+            <input type="text" name="name" id="iname" required minlength="5" maxlength="15" placeholder="Complete name" autocomplete="name">
+        </p>
+        <p>
+            <label for="iaver">Average: </label>
+            <input type="number" name="aver" id="iaver" required min="0" max="10" placeholder="0 to 10" step="0.1" value="0">
+        </p>
+        <p>
+            <label for="imonth">Academic term: </label>
+            <input type="month" name="month" id="imonth" value="2025-04">
+        </p>
+        <p>
+            <label for="iday">Day: </label>
+            <input type="date" name="day" id="iday" value="2025-04-29">
+        </p>
+        <p>
+            <label for="itime">Exam time</label>
+            <input type="time" name="time" id="itime">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
