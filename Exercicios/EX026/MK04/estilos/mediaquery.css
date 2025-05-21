@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*Versão para as demais mídias*/
+
+@media print{
+    *{
+        /* background-image: url(../imagens/back-tablet.jpg);   Desnecessário*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Esta impressão foi feita porque eu fiz um media queria específico para essa tela.';
+        text-decoration: overline;
+    }
+
+    img#tablet{ display: none;}
+    img#phone{ display: none;}
+    img#printer{ display: block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#tablet{ display: block;}
+    img#phone{ display: none;}
+    img#printer{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+
+    img#pc{ display: block;}
+    img#tablet{ display: none;}
+    img#printer{ display: none;}
+    img#phone{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 1280px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+
+    img#tv{ display: block;}
+    img#tablet{ display: none;}
+    img#printer{ display: none;}
+    img#pc{ display: none;}
+    img#phone{ display: none;}
+}
