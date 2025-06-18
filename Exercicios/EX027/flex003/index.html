@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px 0px;
+        }
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+        div.container1-1{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            margin: 10px 0px;
+        }
+        div.item1-1{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+        div.container2{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            margin: 10px 0px;
+        }
+        div.item2{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+        div.container2-1{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            margin: 10px 0px;
+        }
+        div.item2-1{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-direction: row; and Flex-wrap: wrap;</h1>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Flex-direction: row; and Flex-wrap: wrap-reverse;</h1>
+    <div class="container1-1">
+        <div class="item1-1">A</div>
+        <div class="item1-1">B</div>
+        <div class="item1-1">C</div>
+        <div class="item1-1">D</div>
+        <div class="item1-1">E</div>
+        <div class="item1-1">F</div>
+        <div class="item1-1">G</div>
+    </div>
+    <h1>Flex-direction: row-reverse; and Flex-wrap: wrap;</h1>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>Flex-direction: row-reverse; and Flex-wrap: wrap-reverse;</h1>
+    <div class="container2-1">
+        <div class="item2-1">A</div>
+        <div class="item2-1">B</div>
+        <div class="item2-1">C</div>
+        <div class="item2-1">D</div>
+        <div class="item2-1">E</div>
+        <div class="item2-1">F</div>
+        <div class="item2-1">G</div>
+    </div>
+</body>
+</html>
