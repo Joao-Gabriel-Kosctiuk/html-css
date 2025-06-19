@@ -9,8 +9,7 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             margin: 10px 0px;
         }
         div.item{
@@ -23,8 +22,7 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap-reverse;
+            flex-flow: row wrap-reverse;
             margin: 10px 0px;
         }
         div.item1-1{
@@ -37,8 +35,7 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
+            flex-flow: row-reverse wrap;
             margin: 10px 0px;
         }
         div.item2{
@@ -51,8 +48,7 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap-reverse;
+            flex-flow: row-reverse wrap-reverse;
             margin: 10px 0px;
         }
         div.item2-1{
@@ -60,6 +56,17 @@
             border: 1px solid black;
             text-align: center;
             padding: 30px;
+        }
+        div.container3{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: lightsalmon;
+        }
+        div.item3{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
         }
     </style>
 </head>
@@ -103,6 +110,16 @@
         <div class="item2-1">E</div>
         <div class="item2-1">F</div>
         <div class="item2-1">G</div>
+    </div>
+    <h1>Itens com flex: auto; porém com wrap</h1>
+    <div class="container3">
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
+        <div class="item3">Exemplo de bloco</div>
     </div>
 </body>
 </html>
