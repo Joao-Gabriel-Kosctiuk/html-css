@@ -9,9 +9,72 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: stretch;
+            height: 200px;
         }
         div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+            flex: auto;
+        }
+        div.container2{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            height: 200px;
+        }
+        div.item2{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+        div.container2{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            height: 200px;
+        }
+        div.item2{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+        div.container3{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            height: 200px;
+        }
+        div.item3{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+        div.container4{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 200px;
+        }
+        div.item4{
             background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
@@ -21,6 +84,8 @@
     </style>
 </head>
 <body>
+    <h1>Align-Items</h1>
+    <h2>Stretch</h2>
     <div class="container">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -29,6 +94,36 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+    </div>
+    <h2>Flex-start</h2>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h2>Flex-end</h2>
+    <div class="container3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>
+    </div>
+    <h2>Center</h2>
+    <div class="container4">
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
     </div>
 </body>
 </html>
