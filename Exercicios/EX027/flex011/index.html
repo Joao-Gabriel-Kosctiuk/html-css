@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+        }
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div.container2{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+        }
+        div.item2{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        div.container3{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+        }
+        div.item3{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        div.container4{
+            background-color: lightsalmon;
+
+            overflow-x: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        div.item4{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        div.container5{
+            background-color: lightsalmon;
+
+            overflow-x: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        div > div{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+        div.item5-1{
+            flex: 0 1 200px;
+        }
+        div.item5-2{
+            flex: 2 0 200px;
+        }
+        div.item5-3{
+           flex: 1 2 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-grow and Flex-shrink</h1>
+    <h2>Grow: 0; and Shrink: 1; (Padrão)</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <h2>Grow: 1; and Shrink: 0;</h2>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+    </div>
+    <h2>Grow: 1; and Shrink: 1;</h2>
+    <div class="container3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+    </div>
+    <h2>Grow: 0; and Shrink: 0;</h2>
+    <div class="container4">
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+    </div>
+    <h2>Grow: 0; and Shrink: 1; & Grow: 2; and Shrink: 0; & Grow: 1; and Shrink: 2; </h2>
+    <div class="container5">
+        <div class="item5-1">A</div>
+        <div class="item5-2">B</div>
+        <div class="item5-3">C</div>
+    </div>
+</body>
+</html>
