@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: stretch;
+            justify-items: stretch;
+        }
+        div.item{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        div.ai-c-start{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: start;
+            justify-items: stretch;
+        }
+        div.ai-i-start{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        div.ai-c-center{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: center;
+            justify-items: stretch;
+        }
+        div.ai-i-center{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        div.ai-c-end{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: end;
+            justify-items: stretch;
+        }
+        div.ai-i-end{
+            border: 3px solid red;
+            padding: 5px;
+        }
+
+        /*justify items*/
+
+        div.ji-c-start{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: stretch;
+            justify-items: start;
+        }
+        div.ji-i-start{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        div.ji-c-center{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: stretch;
+            justify-items: center;
+        }
+        div.ji-i-center{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        div.ji-c-end{
+            border: 3px solid blue;
+            height: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            gap: 5px;
+            align-items: stretch;
+            justify-items: end;
+        }
+        div.ji-i-end{
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align-items</h1>
+    <h2>Stretch (padrão)</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <h2>Start</h2>
+    <div class="ai-c-start">
+        <div class="ai-i-start">A</div>
+        <div class="ai-i-start">B</div>
+        <div class="ai-i-start">C</div>
+    </div>
+    <h2>Center</h2>
+    <div class="ai-c-center">
+        <div class="ai-i-center">A</div>
+        <div class="ai-i-center">B</div>
+        <div class="ai-i-center">C</div>
+    </div>
+    <h2>End</h2>
+    <div class="ai-c-end">
+        <div class="ai-i-end">A</div>
+        <div class="ai-i-end">B</div>
+        <div class="ai-i-end">C</div>
+    </div>
+
+    <!--Justify items-->
+    <h1>Justify-items</h1>
+    <h2>Stretch (padrão)</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <h2>Start</h2>
+    <div class="ji-c-start">
+        <div class="ji-i-start">A</div>
+        <div class="ji-i-start">B</div>
+        <div class="ji-i-start">C</div>
+    </div>
+    <h2>Center</h2>
+    <div class="ji-c-center">
+        <div class="ji-i-center">A</div>
+        <div class="ji-i-center">B</div>
+        <div class="ji-i-center">C</div>
+    </div>
+    <h2>End</h2>
+    <div class="ji-c-end">
+        <div class="ji-i-end">A</div>
+        <div class="ji-i-end">B</div>
+        <div class="ji-i-end">C</div>
+    </div>
+</body>
+</html>
